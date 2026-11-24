@@ -1,0 +1,12 @@
+defaults: &defaults
+  retries: 3
+  timeout: 5
+  region: eu-central
+
+worker:
+  <<: *defaults
+  retries: 5
+
+reporter:
+  <<: *defaults
+  format: json
